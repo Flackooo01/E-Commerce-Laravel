@@ -39,10 +39,7 @@ class AuthenticatedSessionController extends Controller
         //     'email'=> 'required',
         //     'password' => 'required'
         // ]);
-
-
         // return redirect()->intended(route('dashboard'));
-
     }
 
     /**

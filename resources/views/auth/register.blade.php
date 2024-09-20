@@ -111,18 +111,23 @@
                 </div>
 
                 <div class="data">
+                    <label >Username</label>
+                    <input type="text" name="username" required>
+                </div>
+
+                <div class="data">
                     <label >Email</label>
                     <input type="email" name="email" required>
                 </div>
 
                 <div class="data">
                     <label >Phone</label>
-                    <input type="email" name="phone" required>
+                    <input type="phone" name="phone" required>
                 </div>
 
                 <div class="data">
                     <label >Address</label>
-                    <input type="email" name="email" required>
+                    <input type="text" name="address" required>
                 </div>
 
                 <div class="data">

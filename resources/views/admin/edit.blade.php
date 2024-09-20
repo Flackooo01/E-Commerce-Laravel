@@ -101,9 +101,10 @@
         @include('admin.product.edit')
         {{-- End of Content --}}
 
-        {{-- Footer --}}
-        @include('admin.admin_components.admin_footer')
+
     </div>
+    {{-- Footer --}}
+    @include('admin.admin_components.admin_footer')
 </div>
 <!-- JavaScript files-->
 <script src="{{asset('/admin_panel/vendor/jquery/jquery.min.js')}}"></script>

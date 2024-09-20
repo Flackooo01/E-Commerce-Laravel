@@ -4,7 +4,7 @@
                 <div class="modal-content w-100" style="background-color: #2d3035">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel1">Sign in</h5>
-                            <button type="button"  class="btn btn-close" data-mdb-dismiss="modal" aria-label="Close" style="background-color:#626568"><a href="{{route('admin/user/table')}}" style="text-decoration:none; color:aliceblue;">X</a></button>
+                            <a href="{{route('admin/user/table')}}" style="text-decoration:none; color:aliceblue;"><button type="button"  class="btn btn-close" data-mdb-dismiss="modal" aria-label="Close" style="background-color:#626568">X</button></a>
                         </div>
                     <div class="modal-body p-4">
                         <form action="{{route('admin/user/table/update', $users->id)}}" method="POST">
@@ -14,6 +14,12 @@
                             <div data-mdb-input-init class="form-outline mb-4">
                                 <input type="text" id="email1" name="name" class="form-control" value="{{$users->name}}"/>
                                 <label class="form-label" for="email1">Name</label>
+                            </div>
+
+                            <!-- Username input -->
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <input type="text" id="email1" name="username" class="form-control" value="{{$users->username}}"/>
+                                <label class="form-label" for="email1">Username</label>
                             </div>
 
                             <!-- Email input -->

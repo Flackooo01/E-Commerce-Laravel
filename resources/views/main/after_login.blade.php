@@ -1,4 +1,4 @@
-@include('partials.main_header')
+@include('partials.main_header_afterlogin')
 
     {{-- Navbar Component --}}
     @include('components.main_components.navbar')

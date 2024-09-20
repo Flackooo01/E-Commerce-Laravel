@@ -22,11 +22,13 @@ class UserController extends Controller
     public function update(Request $request, $id){
         $users = User::findOrFail($id);
         $name = $request->name;
+        $username = $request->username;
         $email = $request->email;
         $phone = $request->phone;
         $address = $request->address;
 
         $users->name = $name;
+        $users->username = $username;
         $users->email = $email;
         $users->phone = $phone;
         $users->address = $address;

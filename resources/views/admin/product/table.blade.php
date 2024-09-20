@@ -13,6 +13,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
+                    <th>Username</th>
                     <th>Email</th>
                     <th>Phone</th>
                     <th>Address</th>
@@ -25,6 +26,7 @@
                 <tr>
                     <td> {{$loop->iteration}} </td>
                     <td>{{$item->name}}</td>
+                    <td>{{$item->username}}</td>
                     <td>{{$item->email}}</td>
                     <td>{{$item->phone}}</td>
                     <td>{{$item->address}}</td>
@@ -44,6 +46,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
+                    <th>Username</th>
                     <th>Email</th>
                     <th>Phone</th>
                     <th>Address</th>

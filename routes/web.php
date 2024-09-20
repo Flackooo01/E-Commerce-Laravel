@@ -45,7 +45,9 @@ Route::middleware(['auth', 'admin'])->group(function(){
     Route::get('/admin/dashboard', function () {
         return view('dashboard');
     })->middleware(['auth', 'verified'])->name('dashboard');
-    // route::get('/admin/dashboard', [HomeController::class, 'admin']);
+
+    Route::get('/admin/dashboard', [HomeController::class, 'admin'])->name('dashboard');
+
 
     //admin | adding category
     Route::get('/admin/product/category', [ProductController::class, 'category'])->name('admin/product/category');
@@ -74,44 +76,9 @@ Route::middleware(['auth', 'user'])->group(function(){
         return view('userdashboard');
     })->middleware(['auth', 'verified'])->name('/userpage');
 
-    // route::get('/userpage', [HomeController::class, 'user_page']);
+    Route::get('/userpage', [HomeController::class, 'user_page'])->name('/userpage');
+
 });
 
-
-
-
-// <?php
-
-// use App\Http\Controllers\ProfileController;
-// use Illuminate\Support\Facades\Route;
-// //adding the HomeController
-// use App\Http\Controllers\HomeController;
-
-// // Route::get('/', function () {
-// //     return view('main.landingpage');
-// // });
-
-
-// Route::get('/', [HomeController::class, 'index']);
-// Route::get('/admin', [HomeController::class, 'admin']);
-
-// Route::get('/admin', function () {
-//     return view('admin/index');
-// })->middleware(['auth', 'verified'])->name('dashboard');
-
-// Route::get('/user', function () {
-//     return view('main/after_login');
-// })->middleware(['auth', 'verified'])->name('dashboard');
-
-// route::get('admin', [HomeController::class, 'admin'])->middleware((['auth','admin']));
-// route::get('user/after_login', [HomeController::class, 'after_login'])->middleware((['auth','user']));
-
-// Route::middleware('auth')->group(function () {
-//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-// });
-
-// require __DIR__.'/auth.php';
 
 

@@ -15,7 +15,7 @@
             </div>
 
             <ul class="nav" id="link-sec">
-                <li><a href="{{url('/')}}">Home</a></li>
+                <li><a href="{{url('/userpage')}}">Home</a></li>
                 <li>
                     <div class="font-logo">
                         <a href="#"><i class="fa-solid fa-user"></i>Flackooo

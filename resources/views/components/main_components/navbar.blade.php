@@ -18,7 +18,7 @@
                 <li><a href="{{route('/userpage')}}">Home</a></li>
                 <li>
                     <div class="font-logo">
-                        <a href="#"><i class="fa-solid fa-user"></i>Flackooo
+                        <a href="#"><i class="fa-solid fa-user"></i>{{$user_name}}
                             <i class="fa-solid fa-chevron-down" style="font-size: .8rem;"></i>
                             </a>
                     </div>
